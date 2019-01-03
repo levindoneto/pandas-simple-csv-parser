@@ -15,15 +15,15 @@ $ conda install pandas
 
 ## How to Use
 ```
-$ python pandas.py --multipleOutputsBoolean --<SEPARATION_SYMBOL> <INPUT> <[Column Names]> <OUTPUTS_IN_ORDER_OF_COLUMNS>
+$ python pandas.py --multipleOutputsBoolean --<DELIMITER_SYMBOL> <INPUT> <[Column Numbers]> <OUTPUTS_IN_ORDER_OF_COLUMNS>
 ```
 
 ## Examples
 
-In this example, the columns *DS_APRESENTACAO* and *TP_PRODUTO* are extracted from the file [medicines.csv](tests/in/medicines.csv) and placed into the outputs *productNumbers.txt* and *productNames.txt* respectively. As might be obvious, the names of the columns must be specified within the first line of the file, and separated as the presented data.
+In this example, the columns *DS_APRESENTACAO* (5) and *TP_PRODUTO* (9) are extracted from the file [medicines.csv](tests/in/medicines.csv) and placed into the outputs *productNumbers.txt* and *productNames.txt* respectively.
 
 ```
-$ python pandas.py --true --; tests/in/medicines.csv [DS_APRESENTACAO TP_PRODUTO] [tests/out/productNumbers.txt tests/out/productNames.txt]
+$ python pandas.py --true --; tests/in/medicines.csv [5 9] [tests/out/productNumbers.txt tests/out/productNames.txt]
 ```
 
 ## License
