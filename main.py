@@ -12,4 +12,4 @@ parsedFile = pd.read_csv(dataIn, sep=';', header=None, encoding='utf-8', low_mem
 savedColumn = parsedFile[columnName]
 
 # Put column into a csv
-savedColumn.to_csv(dataOut, sep='\t')
+savedColumn.to_csv(dataOut, sep='\t', index=False)
