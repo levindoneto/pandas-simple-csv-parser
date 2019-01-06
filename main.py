@@ -11,5 +11,10 @@ parsedFile = pd.read_csv(dataIn, sep=';', header=None, encoding='utf-8', low_mem
 # Get specific column
 savedColumn = parsedFile[columnName]
 
+# Remove duplicates
+savedColumn.drop_duplicates(keep='first', inplace=True)
+
 # Put column into a csv
 savedColumn.to_csv(dataOut, sep='\t', index=False)
+
+a=52328
