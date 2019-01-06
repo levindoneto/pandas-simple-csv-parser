@@ -15,7 +15,7 @@ $ conda install pandas
 
 ## How to Use
 ```
-$ python pandasParser.py --multipleOutputsBoolean --<DELIMITER_SYMBOL> <INPUT> <[Column Numbers]> <OUTPUTS_IN_ORDER_OF_COLUMNS>
+$ python pandasParser.py <INPUT> <[COLUMN_NUMBERS(comma-separated)]> <[OUTPUTS_IN_ORDER_OF_COLUMNS(comma-separated)]> -multipleOutputsBoolean DELIMITER_SYMBOL>
 ```
 
 ## Examples
