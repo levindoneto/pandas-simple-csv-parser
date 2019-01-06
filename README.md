@@ -15,7 +15,7 @@ $ conda install pandas
 
 ## How to Use
 ```
-$ python pandas.py --multipleOutputsBoolean --<DELIMITER_SYMBOL> <INPUT> <[Column Numbers]> <OUTPUTS_IN_ORDER_OF_COLUMNS>
+$ python pandasParser.py --multipleOutputsBoolean --<DELIMITER_SYMBOL> <INPUT> <[Column Numbers]> <OUTPUTS_IN_ORDER_OF_COLUMNS>
 ```
 
 ## Examples
