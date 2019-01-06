@@ -20,10 +20,10 @@ $ python pandasParser.py <INPUT> <[COLUMN_NUMBERS(comma-separated)]> <[OUTPUTS_I
 
 ## Examples
 
-In this example, the columns *NU_CNPJ* (0) and *TP_PRODUTO* (9) are extracted from the file [medicines.csv](tests/in/medicines.csv) and placed into the outputs *productNumbers.txt* and *productNames.txt* respectively.
+In this example, the columns *NU_CNPJ* (0) and *NO_PRODUTO* (5) are extracted from the file [medicines.csv](tests/in/medicines.csv) and placed into the outputs *cnpj.csv* and *productNames.csv* respectively.
 
 ```
-$ python pandasParser.py tests/in/medicines.csv [0,9] [tests/out/out0.csv,tests/out/out9.csv] true ; true
+$ python pandasParser.py tests/in/medicines.csv [0,5] [tests/out/cnpj.csv,tests/out/productNames.csv] true ; true
 ```
 
 ## License
