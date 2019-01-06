@@ -15,15 +15,15 @@ $ conda install pandas
 
 ## How to Use
 ```
-$ python pandasParser.py <INPUT> <[COLUMN_NUMBERS(comma-separated)]> <[OUTPUTS_IN_ORDER_OF_COLUMNS(comma-separated)]> -multipleOutputsBoolean DELIMITER_SYMBOL>
+$ python pandasParser.py <INPUT> <[COLUMN_NUMBERS(comma-separated)]> <[OUTPUTS_IN_ORDER_OF_COLUMNS(comma-separated)]> <multipleOutputsBoolean> <DELIMITER_SYMBOL> <createQuotedFilesBoolean>
 ```
 
 ## Examples
 
-In this example, the columns *DS_APRESENTACAO* (5) and *TP_PRODUTO* (9) are extracted from the file [medicines.csv](tests/in/medicines.csv) and placed into the outputs *productNumbers.txt* and *productNames.txt* respectively.
+In this example, the columns *NU_CNPJ* (0) and *TP_PRODUTO* (9) are extracted from the file [medicines.csv](tests/in/medicines.csv) and placed into the outputs *productNumbers.txt* and *productNames.txt* respectively.
 
 ```
-$ python pandas.py --true --; tests/in/medicines.csv [5 9] [tests/out/productNumbers.txt tests/out/productNames.txt]
+$ python pandasParser.py tests/in/medicines.csv [0,9] [tests/out/out0.csv,tests/out/out9.csv] true ; true
 ```
 
 ## License
