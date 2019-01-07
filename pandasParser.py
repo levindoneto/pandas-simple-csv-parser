@@ -1,10 +1,6 @@
 '''
 Usage:
     python pandasParser.py <INPUT> <[COLUMN_NUMBERS(comma-separated)]> <[OUTPUTS_IN_ORDER_OF_COLUMNS(comma-separated)]> <multipleOutputsBoolean> <DELIMITER_SYMBOL> <createQuotedFilesBoolean>
-Options:
-    -n INT                          The n used to get n-gram probabilities
-    -s <path>, --save_model <path>  The path to save the model to
-    -l <path>, --load_model <path>  The path to load the model from
 '''
 
 import management.appManagement as appManagement
@@ -24,7 +20,6 @@ def main(args):
         multipleOutputsBoolean = argsManagement.getBoolean(args[4])
         delimiter = args[5]
         createdQuotedFiles = argsManagement.getBoolean(args[6])
-
         appManagement.run(dataIn, dataOut, delimiter, listColumns,
                           createdQuotedFiles, multipleOutputsBoolean)
     except Exception as e:
