@@ -1,0 +1,6 @@
+language: python
+python:
+  - "3.6.5"
+install:
+  - pip install -r requirements.txt
+script: python pandasParser.py tests/in/medicines.csv [0,5] [tests/out/cnpj.csv,tests/out/productNames.csv] true ; true
