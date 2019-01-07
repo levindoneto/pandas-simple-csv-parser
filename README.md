@@ -2,6 +2,8 @@
 
 Simple CSV parser for huge volumes of data with the use of the library Pandas for Python for getting specific columns of a CSV file and putting the extracted data into one or more files (each column in a separated file or all of them in the same output) in a short amount of time.
 
+![building](https://travis-ci.com/levindoneto/pandas-simple-csv-parser.svg?branch=master)
+
 __Author:__ Levindo Gabriel Taschetto Neto.
 
 ## Python Environment
